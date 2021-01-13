@@ -8,19 +8,6 @@ body {
   color: gray;
 }
 
-.App {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .App-header {
   height: 54px;
   width: 100%;
@@ -35,103 +22,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.App-main {
-  width: 80%;
-  min-width: 800px;
-  min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.App-main-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-  margin: 10px 0;
-}
-
-.App-main-search input {
-  padding-left: 10px;
-  font-size: 18px;
-  width: 80%;
-  height: 40px;
-  border: 1px solid gray;
-  border-radius: 5px 0 0 5px;
-  background-color: #343841;
-  color: white;
-}
-
-.App-main-search button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80px;
-  height: 42px;
-  border: 1px solid gray;
-  border-radius: 0 5px 5px 0;
-  background-color: gray;
-  color: gray;
-  cursor: pointer;
-}
-
-.App-main-search button svg {
-  height: 30px;
-  width: 30px;
-}
-
-.App-main-list {
-  min-height: 500px;
-  width: 90%;
-  padding: 10px;
-}
-
-.App-main-list-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.App-main-list-content-item {
-  width: 220px;
-  height: 350px;
-  margin: 10px 20px;
-  border-radius: 10px;
-  border: 1px solid gray;
 }
 
 .App-footer {
@@ -149,5 +39,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 40px;
+}
+
+.card {
+  background-color: #282c34;
 }
 /*# sourceMappingURL=App.css.map */
