@@ -8,7 +8,7 @@ const MoviesConteiner = ({ movies, loading }) => {
     <>
       {movies !== undefined && movies.length ? (
         movies.map((movie, index) => <MovieCard key={index} movie={movie} />)
-      ) : loading ? (
+      ) : loading && movies !== undefined ? (
         <Loader />
       ) : (
         <h2 className="text-center">Write title of movie</h2>
