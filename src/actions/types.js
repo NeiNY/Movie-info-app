@@ -1,2 +1,4 @@
 export const SEACRH_MOVIE = "MOVIE/SEACRH_MOVIE";
 export const FETCH_MOVIES = "MOVIE/FETCH_MOVIES";
+export const FETCH_MOVIE = "MOVIE/FETCH_MOVIE";
+export const LOADING = "APP/LOADING";

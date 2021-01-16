@@ -6,6 +6,18 @@ $secondaryColor: #343841;
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: gray;
+
+  &:hover {
+    color: #9b9b9b;
+  }
+  &:active {
+    color: gray;
+  }
+}
+
 body {
   background-color: $secondaryColor;
   color: gray;
@@ -22,6 +34,10 @@ body {
     align-items: center;
   }
 
+  &-main {
+    min-height: 61vh;
+  }
+
   &-footer {
     height: 100px;
     width: 100%;
@@ -35,5 +51,9 @@ body {
 }
 
 .card {
+  background-color: $mainColor;
+}
+
+.list-group-item {
   background-color: $mainColor;
 }

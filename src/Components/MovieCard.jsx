@@ -1,24 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MovieCard = ({ movie }) => {
   return (
-    <div className="card mb-3 mx-3" style={{ maxWidth: 520 + "px" }}>
-      <div className="row g-0">
-        <div className="col-md-4">
-          <img src={movie.Poster} class="img-fluid" alt="..." />
+    <div className="card m-1" style={{ width: 18 + "rem" }}>
+      <Link to={"/movie/" + movie.imdbID}>
+        <img src={movie.Poster} className="card-img-top img-fluid" alt="..." />
+        <div className="card-body">
+          <h5 className="card-title">{movie.Title}</h5>
+          <small className="text-muted">{movie.Year}</small>
         </div>
-        <div className="col-md-8">
-          <div className="card-body">
-            <h5 className="card-title">{movie.Title}</h5>
-            <small className="text-muted">{movie.Year}</small>
-            <p className="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-          </div>
-        </div>
-      </div>
+      </Link>
     </div>
   );
 };

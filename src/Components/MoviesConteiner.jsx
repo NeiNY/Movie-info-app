@@ -1,21 +1,25 @@
 import React from "react";
 import { connect } from "react-redux";
+import Loader from "./Loader";
 import MovieCard from "./MovieCard";
 
-const MoviesConteiner = ({ movies }) => {
+const MoviesConteiner = ({ movies, loading }) => {
   return (
-    <div className="row col-md-12 d-flex justify-content-center">
-      {movies.length ? (
+    <>
+      {movies !== undefined && movies.length ? (
         movies.map((movie, index) => <MovieCard key={index} movie={movie} />)
+      ) : loading ? (
+        <Loader />
       ) : (
         <h2 className="text-center">Write title of movie</h2>
       )}
-    </div>
+    </>
   );
 };
 
 const mapStateToProps = (state) => ({
   movies: state.movies.movies,
+  loading: state.app.loading,
 });
 
 export default connect(mapStateToProps)(MoviesConteiner);

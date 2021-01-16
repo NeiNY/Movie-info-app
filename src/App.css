@@ -3,6 +3,19 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  color: #9b9b9b;
+}
+
+a:active {
+  color: gray;
+}
+
 body {
   background-color: #343841;
   color: gray;
@@ -24,6 +37,10 @@ body {
           align-items: center;
 }
 
+.App-main {
+  min-height: 61vh;
+}
+
 .App-footer {
   height: 100px;
   width: 100%;
@@ -42,6 +59,10 @@ body {
 }
 
 .card {
+  background-color: #282c34;
+}
+
+.list-group-item {
   background-color: #282c34;
 }
 /*# sourceMappingURL=App.css.map */

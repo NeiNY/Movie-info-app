@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { searchMovie, fetchMovie } from "../actions/searchAction";
+import { searchMovie, fetchMovies } from "../actions/searchAction";
+import { setLoading } from "../actions/appAction";
 
 export class SearchForm extends Component {
   changeInputHandler = (e) => {
@@ -10,7 +11,8 @@ export class SearchForm extends Component {
   submitHandler = (e) => {
     e.preventDefault();
 
-    this.props.fetchMovie(this.props.text);
+    this.props.fetchMovies(this.props.text);
+    this.props.setLoading();
   };
 
   render() {
@@ -20,8 +22,9 @@ export class SearchForm extends Component {
           type="text"
           className="form-control search col"
           onChange={this.changeInputHandler}
+          placeholder="Search..."
         />
-        <button className="btn btn-primary col-2 mx-1">Search</button>
+        <button className="btn btn-primary col-3 mx-1">Search</button>
       </form>
     );
   }
@@ -33,7 +36,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {
   searchMovie,
-  fetchMovie,
+  fetchMovies,
+  setLoading,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchForm);

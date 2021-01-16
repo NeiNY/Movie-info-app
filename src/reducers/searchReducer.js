@@ -1,4 +1,4 @@
-import { FETCH_MOVIES, SEACRH_MOVIE } from "../actions/types";
+import { FETCH_MOVIE, FETCH_MOVIES, SEACRH_MOVIE } from "../actions/types";
 
 const initialState = {
   text: "",
@@ -19,6 +19,13 @@ export default function (state = initialState, action) {
       return {
         ...state,
         movies: action.payload,
+        loading: false,
+      };
+    case FETCH_MOVIE:
+      return {
+        ...state,
+        movie: action.payload,
+        loading: false,
       };
     default:
       return state;
