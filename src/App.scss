@@ -35,23 +35,28 @@ body {
   }
 
   &-main {
-    min-height: 61vh;
+    min-height: 442px;
   }
 
   &-footer {
     height: 100px;
     width: 100%;
-    background-color: $mainColor;
-    color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin: 40px 0 0 0;
+    background-color: $mainColor;
+    color: gray;
   }
 }
 
 .card {
   background-color: $mainColor;
+  transition: background-color 0.5s ease-out;
+
+  &:hover {
+    background-color: #22262c;
+  }
 }
 
 .list-group-item {

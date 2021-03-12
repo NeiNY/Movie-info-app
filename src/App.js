@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="App-main row col-md-10 offset-md-1 d-flex justify-content-center">
+      <div className="App-main row col-10 offset-1 d-flex justify-content-center">
         <SearchForm />
         <div className="App-main row col-md-12 d-flex justify-content-center">
           <Route exact path="/" component={MoviesConteiner} />

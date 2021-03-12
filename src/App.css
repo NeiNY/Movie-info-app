@@ -38,14 +38,12 @@ body {
 }
 
 .App-main {
-  min-height: 61vh;
+  min-height: 442px;
 }
 
 .App-footer {
   height: 100px;
   width: 100%;
-  background-color: #282c34;
-  color: gray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,11 +53,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 40px;
+  margin: 40px 0 0 0;
+  background-color: #282c34;
+  color: gray;
 }
 
 .card {
   background-color: #282c34;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.card:hover {
+  background-color: #22262c;
 }
 
 .list-group-item {

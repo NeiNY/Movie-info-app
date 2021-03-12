@@ -11,14 +11,18 @@ export class Movie extends Component {
     const { movie } = this.props;
 
     return (
-      <div className="card mb-2" style={{ maxwidth: 500 + "px" }}>
+      <div className="card mb-2 col-xl-8" style={{ width: 1000 + "px" }}>
         <div className="row">
-          <div className="col-lg-3 text-center">
-            <img src={movie.Poster} className="img-fluid" alt="..." />
+          <div className="text-center col-md-6">
+            <img
+              src={movie.Poster}
+              className="img-fluid col-10"
+              alt={movie.Title}
+            />
           </div>
-          <div className="card-body col-lg-9">
+          <div className="card-body text-start col-md-6">
             <h5 className="card-title">{movie.Title}</h5>
-            <ul class="list-group list-group-flush">
+            <ul className="list-group list-group-flush">
               <li className="list-group-item">
                 <strong>Genre:</strong> {movie.Genre}
               </li>

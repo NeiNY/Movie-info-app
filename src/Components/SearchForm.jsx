@@ -17,7 +17,7 @@ export class SearchForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.submitHandler} className="row my-4 col-md-6">
+      <form onSubmit={this.submitHandler} className="row my-4 col-11 col-lg-6">
         <input
           type="text"
           className="form-control search col"
